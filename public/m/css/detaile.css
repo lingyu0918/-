@@ -1,0 +1,112 @@
+
+.mui-slider .img{
+    vertical-align: top;
+}
+.product-title{
+    font-size: 14px;
+
+}
+
+.price{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.price .now{
+    font-size: 24px;
+    color: #ea543d ;
+}
+.price .olod{
+    text-decoration: line-through;
+    color: #ccc;
+    padding-left:10px;
+}
+.size{
+    padding: 10px;
+    font-size: 14px;
+}
+.size span{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.num{
+    padding: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 28px;
+
+}
+.num .selectNum {
+
+}
+.num .selectNum input{
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    margin: 0px;
+    border-radius: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    float: left;
+}
+.num .selectNum span{
+    width: 28px;
+    height: 28px;
+    float: left;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 28px;
+
+}
+.num .selectNum{
+    padding-right:10px;
+}
+
+.num{
+     border-top:1px solid #ccc;
+} 
+.btns{
+    padding: 10px;
+    overflow: hidden;
+}
+.btns a,
+.btns span{
+    width: 50%;
+    height: 34px;
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    color: #ffffff;
+    font-size: 14px;
+} 
+.btns a:first-child{
+    background: #fa672d;
+}
+.btns span{
+    background: #991020;
+}
+
+.size  .active{
+    color: #fff;
+    background: #fa672d;
+
+}
+#cont img{
+   width: 100%;
+   /* display: block; */
+   /* position: absolute; */
+    
+}
+
+
+
+

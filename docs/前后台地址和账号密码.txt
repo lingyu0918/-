@@ -1,0 +1,14 @@
+
+1.建好letao数据库
+2.右键导入sql
+
+前台会员地址
+http://localhost:3000/mobile/login.html
+账号 itcast
+密码 111111
+
+
+后台地址
+http://localhost:3000/admin/login.html
+账号 root
+密码 123456

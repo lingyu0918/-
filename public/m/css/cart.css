@@ -1,0 +1,24 @@
+.mui-media-body{
+    font-size: 14px;
+    color: #8f8f94;
+}
+.mui-media-body .price-1{
+    color: #ff3300;
+}
+.mui-cart .price-2{
+    text-decoration: line-through;
+}
+#refreshContainer{
+    position: absolute;
+    top:44px;
+    bottom: 50px;
+}
+
+
+
+
+
+
+
+
+

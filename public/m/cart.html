@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="./assets/mui/js/mui.min.js"></script>
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="./assets/artTemplate/template-native.js"></script>
+    <script src="./js/public.js"></script>
+    <script src="./js/cart.js"></script>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+        <h1 class="mui-title">乐淘云购</h1>
+        <a href="" class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab footer">
+        <a class="mui-tab-item " href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="cart.html">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label ">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <div  id="refreshContainer">
+        <div>
+            <ul class="mui-table-view" id="cartlist">
+                <!-- <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="images/detail.jpg">
+                    <div class="mui-media-body">
+                            【莹恋】MIZUNO美津浓V1GA159002乒乓球鞋男鞋女鞋室内综合训练鞋
+                        <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                        <input type="checkbox">
+                        <span class="price-1">￥112</span>
+                        <span class="price-2">￥342</span>
+                        <span class="price-3">鞋码：42</span>
+                    </div>
+                </a>
+            </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- <li class="mui-table-view-cell">
+        <div class="mui-slider-right mui-disabled">
+            <a class="mui-btn mui-btn-red">删除</a>
+        </div>
+        <div class="mui-slider-handle">
+            左滑显示删除按钮
+        </div>
+    </li> -->
+    <script type="text/template" id="templateid">
+        <%for(var i=0;i<data.length;i++){%>
+            <li class="mui-table-view-cell mui-media" >
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue">修改</a>
+                            <a class="mui-btn mui-btn-red" id="cart-delete" data-id="<%=data[i].id%>">删除</a>
+                        </div>
+                        <div class="mui-slider-handle">
+                            <img class="mui-media-object mui-pull-left" src="<%=data[i].pic[0].picAddr%>">
+                            <div class=" mui-media-body">
+                                    <%=data[i].proName%>
+                                    <div class="mui-cart">
+                                        <input type="checkbox">
+                                        <span class="price-1"> ￥<%=data[i].price%></span>
+                                        <span class="price-2"> ￥<%=data[i].oldPrice%></span>
+                                        <span class="price-3">鞋码： <%=data[i].size%>*<%=data[i].num%></span>
+                                    </div>
+                            
+                            </div>
+                        </div>    
+                </li>
+        <%}%>
+    </script>
+</body>
+
+</html>
